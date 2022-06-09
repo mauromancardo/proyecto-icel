@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 0.10fr auto 0.10fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer";
+}
+
+
+/*********************header******************/
+.header {
+    grid-area: header;
+    background-color: #184e77;
+}
+
+.header img {
+    width: 40%;
+}
+
+/************************main*************/
+.main {
+    grid-area: main;
+    background-color: #168aad;
+
+}
+
+/*section1*/
+
+.main .section1 .article1 {
+    text-align: center;
+}
+
+.main .section1 .article2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main .section1 article iframe {
+
+    width: 600px;
+    height: 400px;
+    margin: 15px;
+}
+
+.main .section1 article img {
+
+    width: 600px;
+    height: 400px;
+    margin: 15px;
+}
+
+.main .section1 h4 {
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.main .section1 a {
+    text-decoration: none;
+    color: azure;
+    background-color: blue;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.main .section1 a:hover {
+    background-color: red;
+
+}
+
+/*section2*/
+.main .section2 h2 {
+    text-align: center;
+}
+
+
+.main .section2 article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main .section2 article div>h3 {
+    text-align: center;
+}
+
+.main .section2 article div img {
+    margin: 15px;
+    transition: width 2s;
+    height: 2s;
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+}
+
+.main .section2 article div img:hover {
+    width: 450px;
+    height: 400px;
+
+}
+
+/*quienes somos pag*/
+
+
+.main .section1 article p {
+    text-align: center;
+}
+
+/*contaco pag*/
+.main .section2 article p {
+    text-align: center;
+}
+
+
+/************nav********/
+.nav {
+    grid-area: nav;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav ul li {
+    margin: 30px;
+}
+
+
+.nav ul li a {
+    display: inline;
+    font-size: xx-large;
+    text-decoration: none;
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.nav ul li a:hover {
+    color: black;
+}
+
+/****************footer*******************/
+.footer {
+    grid-area: footer;
+    background-color: #184e77;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+}
+
+/******************mediaqueries*******************/
+
+/***********desktop********/
+/*default*/
+
+/**********tablet**********/
+@media screen and (max-width:1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.10fr 0.10fr auto 0.10fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    /*header*/
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .header img {
+        margin-left: 170px;
+    }
+
+
+    /*nav*/
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .nav ul li {
+        margin: 5px;
+    }
+
+    /*main*/
+    .main .section1 article iframe {
+
+        width: 600px;
+        height: 400px;
+        margin: 5px;
+    }
+
+    .main .section1 article img {
+
+        width: 600px;
+        height: 400px;
+        margin: 5px;
+    }
+
+    .main .section1 .article2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .main .section2 article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+
+    .main .section2 article div img {
+        margin: 5px;
+        border-radius: 15px;
+        width: 400px;
+        height: 300px;
+    }
+
+    /*footer*/
+    .footer {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*celu y tablet*/
+@media screen and (max-width:750px) {
+    .nav {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/***********cel**********/
+@media screen and (max-width:610px) {
+
+    .main .section1 article iframe {
+
+        width: 500px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    .main .section1 article img {
+
+        width: 500px;
+        height: 300px;
+        margin: 5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:520px) {
+
+    .header img {
+        margin-left: 130px;
+    }
+
+    .main .section1 article iframe {
+
+        width: 400px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .main .section1 article img {
+
+        width: 400px;
+        height: 200px;
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+.nav ul li a{
+    font-size: x-large;
+
+}
+.footer h3 {
+    font-size: small;
+}
+
+    .main .section1 article iframe {
+
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .main .section1 article img {
+
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .main .section2 article div img {
+        margin: 15px;
+        transition: width 2s;
+        height: 2s;
+        border-radius: 5px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .main .section2 article div img:hover {
+        width: 300px;
+        height: 200px;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header img {
+        margin-left: 100px;
+    }
+
+}
