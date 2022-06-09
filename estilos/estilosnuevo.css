@@ -36,7 +36,28 @@ body {
 
 .header img {
     width: 40%;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
 }
+
+@keyframes texto {
+    from
+
+    /* inicio */
+        {
+        transform: translateX(1300px);
+    }
+
+    to
+
+    /* final */
+        {
+        transform: translate(0);
+    }
+}
+
 
 /************************main*************/
 .main {
@@ -49,6 +70,7 @@ body {
 
 .main .section1 .article1 {
     text-align: center;
+
 }
 
 .main .section1 .article2 {
@@ -61,14 +83,14 @@ body {
 
 .main .section1 article iframe {
 
-    width: 600px;
+    width: 555px;
     height: 400px;
     margin: 15px;
 }
 
 .main .section1 article img {
 
-    width: 600px;
+    width: 555px;
     height: 400px;
     margin: 15px;
 }
@@ -82,11 +104,29 @@ body {
 .main .section1 a {
     text-decoration: none;
     color: azure;
-    background-color: blue;
+
     font-size: 30px;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, red, blue, green, black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 .main .section1 a:hover {
@@ -108,6 +148,7 @@ body {
 
 }
 
+
 .main .section2 article div>h3 {
     text-align: center;
 }
@@ -119,7 +160,9 @@ body {
     border-radius: 15px;
     width: 350px;
     height: 300px;
+
 }
+
 
 .main .section2 article div img:hover {
     width: 450px;
@@ -342,13 +385,14 @@ body {
 }
 
 @media screen and (max-width:450px) {
-.nav ul li a{
-    font-size: x-large;
+    .nav ul li a {
+        font-size: x-large;
 
-}
-.footer h3 {
-    font-size: small;
-}
+    }
+
+    .footer h3 {
+        font-size: small;
+    }
 
     .main .section1 article iframe {
 
