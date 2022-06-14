@@ -242,7 +242,7 @@ p {
     height: 600px;
 }
 
-.paginas section article img {
+.paginas section article>img {
     width: 1000px;
     height: 600px;
 }
