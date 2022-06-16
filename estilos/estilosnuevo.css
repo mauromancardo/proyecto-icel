@@ -91,7 +91,7 @@ body {
 
 }
 
-.novedades .article2 {
+.novedades .col .article2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,13 +99,13 @@ body {
 
 }
 
-.novedades article iframe {
+.novedades .col article iframe {
     width: 500px;
     height: 400px;
     margin: 15px;
 }
 
-.novedades article img {
+.novedades .col article img {
 
     width: 500px;
     height: 400px;
@@ -118,7 +118,7 @@ body {
     font-size: 30px;
 }
 
-.novedades .hero>h2 {
+.novedades .col .hero>h2 {
     margin-bottom: 30px;
 }
 
@@ -299,35 +299,35 @@ h3 {
     }
 
     /*main*/
-    .novedades article iframe {
+    .novedades .col article iframe {
 
         width: 600px;
         height: 400px;
         margin: 5px;
     }
 
-    .novedades article img {
+    .novedades .col article img {
 
         width: 600px;
         height: 400px;
         margin: 5px;
     }
 
-    .novedades .article2 {
+    .novedades .col article {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
     }
 
-    .promociones article {
+    .promociones  article {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
     }
 
-    .novedades .hero {
+    .novedades .col .hero {
         margin: 25px;
     }
 
@@ -376,14 +376,14 @@ h3 {
 /***********cel**********/
 @media screen and (max-width:610px) {
 
-    .novedades article iframe {
+    .novedades .col article iframe {
 
         width: 500px;
         height: 300px;
         margin: 5px;
     }
 
-    .novedades article img {
+    .novedades .col  article img {
 
         width: 500px;
         height: 300px;
@@ -407,14 +407,14 @@ h3 {
         margin-left: 130px;
     }
 
-    .novedades article iframe {
+    .novedades .col article iframe {
 
         width: 400px;
         height: 200px;
         margin: 5px;
     }
 
-    .novedades article img {
+    .novedades .col article img {
 
         width: 400px;
         height: 200px;
@@ -447,7 +447,7 @@ h3 {
         margin: 5px;
     }
 
-    .novedades article img {
+    .novedades .col article img {
 
         width: 300px;
         height: 200px;
