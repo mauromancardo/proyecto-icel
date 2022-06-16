@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*header*/
+.header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header img {
+    width: 100px;
+
+}
+
+/*hero*/
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(80vh - 150px);
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.205)), url(../imagenes/todoslosiphone.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero a {
+    text-decoration: none;
+    color: azure;
+
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, red, blue, green, black);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.novedades a:hover {
+    background-color: red;
+
+}
+
+
+/*main*/
+
+
+.main {
+    grid-area: main;
+    background-color: #c9d6da;
+
+}
+
+/*novedades*/
+.novedades {
+    margin-bottom: 30px;
+}
+
+.novedades .article1 {
+    text-align: center;
+
+}
+
+.novedades .video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.novedades .foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.novedades .video iframe {
+    width: 600px;
+    height: 400px;
+    margin: 15px;
+}
+
+.novedades .foto img {
+
+    width: 600px;
+    height: 400px;
+    margin: 15px;
+}
+
+.novedades .foto .texto {
+    width: 550px;
+}
+
+.novedades .video .texto {
+    width: 550px
+}
+
+/*promociones*/
+
+.promociones h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.promociones article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.promociones article div {
+    width: 355px;
+    height: 450px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 30px 10px black;
+    border-radius: 15px;
+    background-color: rgb(118, 118, 204);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+.promociones article div h3 {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    border-radius: 15px 15px 0 0;
+    transition: 1s;
+}
+
+.promociones article div>p {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+
+
+}
+
+.promociones article div img {
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+
+}
+
+.promociones article div a {
+    background-color: aliceblue;
+    color: rgb(15, 15, 80);
+    border-radius: 5px;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+.promociones article div:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+/*footer*/
+
+.footer {
+    grid-area: footer;
+    background-color: #184e77;
+    padding: 10px;
+}
+.footer > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer div h6 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.footer div img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*contacto*/
+.contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.contacto div {
+    text-align: center;
+    width: 550px;
+}
+
+.contacto div iframe {
+    width: 550px;
+    height: 350px;
+    margin: 30px;
+}
+
+.formulario article h3 {
+    margin: 100px;
+    text-align: center;
+}
+
+
+/*quienes somos*/
+
+.quienes .fotoq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quienes .fotoq img {
+
+    width: 700px;
+    height: 500px;
+    margin: 15px;
+
+}
+
+.quienes article h2 {
+    text-align: center;
+}
+
+/*servicio tecnico*/
+
+.svctec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.svctec div img {
+    width: 550px;
+}
+
+
+/*tienda*/
+.promociones h2 {
+    width: 100%;
+   background-color: rgba(49, 49, 240, 0.836);
+}
+
+/*media*/
+
+@media screen and (max-width:910px) {
+    .novedades .video iframe {
+        width: 450px;
+        height: 400px;
+        margin: 15px;
+    }
+
+    .novedades .foto img {
+
+        width: 450px;
+        height: 400px;
+        margin: 15px;
+    }
+
+    .quienes .fotoq img {
+
+        width: 500px;
+        height: 300px;
+        margin: 5px;
+
+    }
+
+        .svctec div img {
+            width: 450px;
+        }
+}
+
+@media screen and (max-width:750px) {
+    .novedades .video iframe {
+        width: 375px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    .novedades .foto img {
+
+        width: 375px;
+        height: 300px;
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+
+    }
+
+    .hero p {
+        font-size: 20px;
+
+    }
+
+    .hero a {
+
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .quienes .fotoq img {
+
+        width: 400px;
+        height: 300px;
+        margin: 5px;
+
+    }
+}
+
+@media screen and (max-width:660px) {
+    .novedades .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .novedades .foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+        .svctec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+}
+
+@media screen and (max-width:575px) {
+    .novedades .foto .texto {
+        width: 350px;
+    }
+
+    .novedades .video .texto {
+        width: 350px
+    }
+
+    .hero h2 {
+        font-size: 30px;
+
+    }
+
+    .hero p {
+        font-size: 15px;
+
+    }
+
+    .hero a {
+
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .contacto div iframe {
+        width: 350px;
+        height: 250px;
+    }
+
+    .formulario article h3 {
+        margin: 50px;
+    }
+
+    .quienes .fotoq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .novedades .video iframe {
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .novedades .foto img {
+
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    .promociones article div {
+        width: 255px;
+        height: 300px;
+    }
+
+    .promociones article div img {
+
+        transition: width 2s;
+        height: 2s;
+        border-radius: 15px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .promociones article div img:hover {
+        width: 250px;
+        height: 200px;
+
+    }
+
+    .quienes .fotoq img {
+
+        width: 300px;
+        height: 200px;
+        margin: 5px;
+
+    }
+          .svctec div img {
+              width: 300px;
+          }
+}

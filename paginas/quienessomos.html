@@ -5,34 +5,62 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible content= ie=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Quienes somos?</title>
-    <link rel="stylesheet" href="../estilos/estilosnuevo.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/favicon-16x16.png">
+    <title>I Cel</title>
+    <link rel="stylesheet" href="../estilos/bootstrap.css">
+    <link rel="stylesheet" href="../estilos/estilos2.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
 </head>
 
 <body>
-    <div class="grid-container">
+    <div>
         <header class="header">
-            <a href="../index.html"><img src="../imagenes/logo.png">
-                <nav class="nav">
-                    <ul>
-                        <li><a href="quienessomos.html">Quienes somos?</a></li>
-                        <li><a href="tienda.html">tienda</a></li>
-                        <li><a href="serviciotecnico.html">servico tecnico</a></li>
-                        <li><a href="contacto.html">contacto</a></li>
-                    </ul>
-                </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">I Cel</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/quienessomos.html">Quienes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/serviciotecnico.html" tabindex="-1"
+                                    aria-disabled="true">Servicio tecnico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/tienda.html" tabindex="-1"
+                                    aria-disabled="true">Tienda
+                                </a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main class="main">
-            <div class="paginas">
-                <section>
-                    <article>
-                        <h2>quienes somos?</h2>
-                    </article>
-                    <article>
+
+            <section class="quienes">
+                <article>
+                    <h2>quienes somos?</h2>
+                </article>
+                <article class="fotoq">
+                    <div>
                         <img src="../imagenes/svendedores.jpg" alt="vendedores">
-                    </article>
-                    <article>
+                    </div>
+
+                    <div>
                         <p>Sobre Nosotros:
                             Hace más de 5 años que estamos en el mercado tecnológico. Somos especialistas en celulares
                             apple,
@@ -48,19 +76,26 @@
                             de
                             compra.
                         </p>
-                    </article>
-                </section>
-            </div>
+                    </div>
+
+            </section>
+
         </main>
         <footer class="footer">
-            <h3> Pagina creada por Mauro mancardo</h3>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png" alt="icono ig">
-                <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png"
-                        alt="icono facebook">
-                    <a href="https://www.twitter.com/" target="_blank"><img src="../imagenes/twitter.png"
-                            alt="icono ig"></a>
+            <div>
+                <h3> Pagina creada por Mauro mancardo</h3>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png"
+                        alt="icono ig">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png"
+                            alt="icono facebook">
+                        <a href="https://www.twitter.com/" target="_blank"><img src="../imagenes/twitter.png"
+                                alt="icono ig"></a>
+            </div>
         </footer>
     </div>
 </body>
+<script src="estilos/bootstrap.js"></script>
 
 </html>
