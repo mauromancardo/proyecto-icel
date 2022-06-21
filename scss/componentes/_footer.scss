@@ -1,0 +1,27 @@
+@import url(../base/_variables.scss);
+/*footer*/
+
+.footer {
+    grid-area: footer;
+    background-color: #184e77;
+    padding: 10px;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h6 {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+
+        }
+
+    }
+}

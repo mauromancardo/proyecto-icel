@@ -1,0 +1,11 @@
+@import url(../base/_variables.scss);
+/*header*/
+.header {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100px;
+    }
+
+}
