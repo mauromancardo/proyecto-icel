@@ -1,48 +1,77 @@
 @import "_variables.scss";
+
 @media screen and (max-width:910px) {
+
     .novedades {
-        .video iframe {
-            width: 450px;
-            height: 400px;
-            margin: 15px;
+        .video {
+            div {
+                iframe {
+                    width: 450px;
+                    height: 400px;
+                    margin: 15px;
+
+                }
+            }
         }
 
-        .foto img {
+        .foto {
+            div {
+                img {
+                    width: 450px;
+                    height: 400px;
+                    margin: 15px;
 
-            width: 450px;
-            height: 400px;
-            margin: 15px;
+                }
+            }
         }
     }
 
-
-    .quienes .fotoq img {
-
-        width: 500px;
-        height: 300px;
-        margin: 5px;
-
+    .quienes {
+        .fotoq {
+            div {
+                img {
+                    width: 500px;
+                    height: 300px;
+                    margin: 5px;
+                }
+            }
+        }
     }
 
-    .svctec div img {
-        width: 450px;
+    .svctec {
+        div {
+            img {
+                width: 450px;
+            }
+        }
     }
+
 }
 
 @media screen and (max-width:750px) {
-
     .novedades {
-        .video iframe {
-            width: 375px;
-            height: 300px;
-            margin: 5px;
+        .video {
+            div {
+                iframe {
+                    width: 370px;
+                    height: 300px;
+                    margin: 5px;
+
+                }
+            }
         }
 
-        .foto img {
 
-            width: 375px;
-            height: 300px;
-            margin: 5px;
+
+        .foto {
+            div {
+                img {
+                    width: 370px;
+                    height: 300px;
+                    margin: 5px;
+
+                }
+            }
         }
     }
 
@@ -75,12 +104,16 @@
 }
 
 @media screen and (max-width:700px) {
-    .quienes .fotoq img {
-
-        width: 400px;
-        height: 300px;
-        margin: 5px;
-
+    .quienes {
+        .fotoq {
+            div {
+                img {
+                    width: 400px;
+                    height: 300px;
+                    margin: 5px;
+                }
+            }
+        }
     }
 }
 
@@ -104,8 +137,6 @@
 
     }
 
-
-
     .svctec {
         display: flex;
         flex-direction: column;
@@ -117,13 +148,17 @@
 
 @media screen and (max-width:575px) {
     .novedades {
-        .foto .texto {
-            width: 350px;
+        .foto {
+            .texto {
+                width: 350px;
+            }
 
         }
 
-        .video .texto {
-            width: 350px
+        .video {
+            .texto {
+                width: 350px
+            }
         }
 
     }
@@ -148,12 +183,18 @@
 
     }
 
+    .contacto {
+        div {
+            width: 350px;
 
-
-    .contacto div iframe {
-        width: 350px;
-        height: 250px;
+            iframe {
+                width: 350px;
+                height: 250px;
+                margin: 5px;
+            }
+        }
     }
+
 
     .formulario article h3 {
         margin: 50px;
@@ -170,19 +211,29 @@
 @media screen and (max-width:450px) {
 
     .novedades {
-        .video iframe {
-            width: 300px;
-            height: 200px;
-            margin: 5px;
+        .video {
+            div {
+                iframe {
+                    width: 300px;
+                    height: 200px;
+                    margin: 5px;
+                }
+            }
         }
 
-        .foto img {
+        .foto {
+            div {
+                img {
+                    width: 300px;
+                    height: 200px;
+                    margin: 5px;
 
-            width: 300px;
-            height: 200px;
-            margin: 5px;
+                }
+            }
         }
     }
+
+
 
     .promociones {
         article {
@@ -207,17 +258,91 @@
             height: 200px;
 
         }
+    }
 
-        .quienes .fotoq img {
+    .quienes .fotoq div img {
 
-            width: 300px;
-            height: 200px;
-            margin: 5px;
+        width: 300px;
+        height: 200px;
+        margin: 5px;
 
-        }
+    }
 
-        .svctec div img {
-            width: 300px;
+    .svctec {
+        div {
+            img {
+                width: 350px;
+            }
         }
     }
+}
+
+
+@media screen and (max-width:350px) {
+    .novedades {
+        .video {
+            .texto {
+                width: 280px;
+            }
+
+            div {
+                iframe {
+                    width: 280px;
+                    height: 150px;
+                    margin: 5px;
+
+                }
+            }
+        }
+
+        .foto {
+            .texto {
+                width: 280px;
+            }
+
+            div {
+                img {
+                    width: 280px;
+                    height: 150px;
+                    margin: 5px;
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        div {
+            h3 {
+                font-size: small;
+            }
+        }
+    }
+
+    .quienes .fotoq div img {
+
+        width: 280px;
+        height: 200px;
+        margin: 5px;
+
+    }
+
+    .contacto {
+        div {
+            width: 280px;
+
+            iframe {
+                width: 280px;
+                height: 150px;
+                margin: 5px;
+            }
+        }
+    }
+        .svctec {
+            div {
+                img {
+                    width: 280px;
+                }
+            }
+        }
 }
