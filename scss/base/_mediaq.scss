@@ -196,15 +196,21 @@
     }
 
 
-    .formulario article h3 {
-        margin: 50px;
+    .formulario {
+        article {
+            h3 {
+                margin: 50px;
+            }
+        }
     }
 
-    .quienes .fotoq {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .quienes {
+        .fotoq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -338,11 +344,12 @@
             }
         }
     }
-        .svctec {
-            div {
-                img {
-                    width: 280px;
-                }
+
+    .svctec {
+        div {
+            img {
+                width: 280px;
             }
         }
+    }
 }

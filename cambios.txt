@@ -1,3 +1,4 @@
 use extend en el .boton de "encontra todo lo que queres" y le puse esas propiedades a "ir a la tienda "
 use mixing en .foto div img 
 use map get en los colores de .novedades .article1 h2 y en .main en el background
+arregle el menu de bootstrap
