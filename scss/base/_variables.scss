@@ -1,3 +1,16 @@
 $color-principal: #c9d6da;
 $color-promo: rgb(118, 118, 204);
 $color-titulos: rgba(35, 35, 35, 90%);
+
+
+@mixin cajas ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+$colores: (
+    "principal1":#c9d6da,
+    "blanco":white,
+
+)
